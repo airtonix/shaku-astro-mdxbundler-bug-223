@@ -1,0 +1,12 @@
+---
+import {getMDXComponent} from 'mdx-bundler/client'
+import Base from '../layouts/base.astro'
+
+import { code } from '../components/thing'
+
+const Component = getMDXComponent(code)
+
+---
+<Base>
+    <Component />
+</Base>
